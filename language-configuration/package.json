@@ -1,0 +1,13 @@
+{
+  "contributes": {
+    "languages": [
+      {
+        "id": "sql",
+        "extensions": [
+          ".sql"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ]
+  }
+}

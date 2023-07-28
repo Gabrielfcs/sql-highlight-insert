@@ -1,0 +1,18 @@
+# Arquivos de compilação, como .vsix e node_modules
+*.vsix
+node_modules/
+
+# Arquivos de log
+*.log
+
+# Arquivos temporários
+*.tmp
+
+# Dependências e configurações específicas do ambiente
+.vscode/
+npm-debug.log
+yarn-error.log
+
+# Arquivos gerados automaticamente
+out/
+dist/

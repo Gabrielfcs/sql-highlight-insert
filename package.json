@@ -1,0 +1,67 @@
+{
+  "name": "sql-highlight-insert",
+  "displayName": "SQL Highlight Insert",
+  "description": "Uma extensão para realçar consultas SQL do tipo INSERT no Visual Studio Code.",
+  "version": "1.0.0",
+  "publisher": "GabrielFelipeCegattadosSantos",
+  "repository": "https://github.com/gabrielfcs/sql-highlight-insert.git",
+  "author": "Gabriel Felipe Cegatta dos Santos",
+  "license": "MIT",
+  "icon": "images/icon.png",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onLanguage:sql"
+  ],
+  "main": "./out/index.js",
+  "out": "./out",
+  "scripts": {
+    "compile": "tsc -p ."
+  },
+  "contributes": {
+    "languages": [
+      {
+        "id": "sql",
+        "aliases": [
+          "SQL"
+        ],
+        "extensions": [
+          ".sql"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "hoverProvider": [
+      {
+        "language": "sql",
+        "scheme": "file"
+      }
+    ]
+  },
+  "keywords": [
+    "sql",
+    "highlight",
+    "insert",
+    "database",
+    "query",
+    "code",
+    "vscode",
+    "extension",
+    "SQL INSERT",
+    "SQL queries",
+    "SQL editor",
+    "syntax highlight",
+    "SQL syntax"
+  ],
+  "dependencies": {
+    "node-sql-parser": "^4.8.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.5.4",
+    "vscode": "^1.1.37"
+  }
+}
